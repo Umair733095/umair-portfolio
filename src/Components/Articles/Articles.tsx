@@ -3,6 +3,10 @@ import Navbar from "../Navbar";
 import Footer from "../Footer";
 
 const Articles = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
   return (
     <>
       <Navbar />
