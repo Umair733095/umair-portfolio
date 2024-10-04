@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+.h1 {
+    opacity: 0;
+    padding: 0;
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+}
+
+.Masked_h1 {
+    padding: 0;
+    margin: 0;
+    font-size: 40px;
+    font-weight: 900;
+    background: url('mask.jpg') no-repeat center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: cover;
+    background-position: 0 0;
+    animation: backgroundMove 14s ease 0s infinite normal none running;
+}
+
+@keyframes backgroundMove {
+    0% {
+        background-position: 0 0;
+    }
+    20% {
+        background-position: 0 25%;
+    }
+    30% {
+        background-position: 0 45%;
+    }
+    40% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 0 65%;
+    }
+    60% {
+        background-position: 0 75%;
+    }
+    70% {
+        background-position: 0 95%;
+    }
+    80% {
+        background-position: 0 75%;
+    }
+    90% {
+        background-position: 0 45%;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.Unmasked_h1,
+.h1_span {
+    padding: 0;
+    margin: 0;
+    font-family: 'roboto', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: rgb(237, 237, 237);
+}
+
+.Para,
+.anchor {
+    letter-spacing: 0.24px;
+    line-height: 29.7px;
+    padding: 0;
+    margin: 0;
+    font-family: 'roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.8)
+}
+
+.Para {
+    opacity: 0;
+}
+
+.anchor {
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: bottom;
+    color: rgba(255, 255, 255, 1)
+}
+
+.anchor::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    left: 0;
+    bottom: 0;
+    border-bottom: 3px solid #c10e23;
+    background-color: #c10e23;
+    transition: all 0.3s ease-in-out, pointer 0.15s;
+    z-index: -1;
+}
+
+.anchor:hover::before {
+    height: 100%;
+}
+
+.anchor:hover {
+    cursor: pointer;
+}
