@@ -81,4 +81,13 @@
     .text {
         font-size: 4em;
     }
+    .text {
+        mix-blend-mode: normal;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 800px) {
+    .text {
+        mix-blend-mode: normal;
+    }
 }

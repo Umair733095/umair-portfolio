@@ -12,7 +12,7 @@
     margin: 0;
     font-size: 40px;
     font-weight: 900;
-    background: url('mask.jpg') no-repeat center;
+    background: url('../../../public/mask.jpg') no-repeat center;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: cover;

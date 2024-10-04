@@ -50,12 +50,12 @@
 .client-logo-img {
     filter: initial;
     width: 100%;
-    opacity: 0.6;
+    opacity: 0.75;
     transition: opacity 0.15s;
 }
 
 .client-logo-img:hover {
-    opacity: 0.9;
+    opacity: 0.95;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 994px) {
