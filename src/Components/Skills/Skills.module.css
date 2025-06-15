@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
+.display {
+    transition: opacity 1.5s;
+    opacity: 1 !important;
+}
+
+.skill-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 120px;
+    overflow-x: hidden;
+}
+
+.skill-heading {
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+    font-family: "roboto slab", sans-seri;
+    color: rgb(237, 237, 237);
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 0.24px;
+    line-height: 48px;
+}
+
+.skill-para {
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+    font-family: roboto, sans-serif;
+    color: rgba(255, 255, 255, 0.85)
+}
+
+.skill-logo-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding-top: 40px;
+}
+
+.skill-logo-img-container {
+    opacity: 0;
+    border: solid 1px rgba(255, 255, 255, 0.1);
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-bottom: 24px;
+}
+
+.skill-logo-img {
+    filter: initial;
+    width: 100%;
+    opacity: 0.75;
+    transition: opacity 0.15s;
+}
+
+.skill-logo-img:hover {
+    opacity: 0.95;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 994px) {
+    .skill-logo-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .skill-logo-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

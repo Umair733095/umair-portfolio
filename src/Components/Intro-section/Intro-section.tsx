@@ -21,7 +21,7 @@ const IntroSection = () => {
         <div>
           <FadeText
             UnmaskedHeading="Hi, I'm"
-            MaskedHeading=" Hashir"
+            MaskedHeading=" Umair"
             Span="."
             delay={0.3}
           ></FadeText>
@@ -44,8 +44,8 @@ const IntroSection = () => {
               <FadeText
                 oncomplete={() => setIntroDisplayed(true)}
                 Para="Get in touch at "
-                AnchorText="hashdev200@gmail.com"
-                anchorRef="mailto:hashdev200@gmail.com"
+                AnchorText="umair733095@gmail.com"
+                anchorRef="mailto:umair733095@gmail.com"
                 delay={1.8}
               ></FadeText>
             </div>

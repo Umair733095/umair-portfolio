@@ -1,6 +1,5 @@
-import Icon_Cloud from "../Magic-ui/Icon-cloud";
+import { IconCloud } from "../Magic-ui/Icon-cloud";
 
-function IconCloud() {
   const slugs = [
     "typescript",
     "javascript",
@@ -34,11 +33,14 @@ function IconCloud() {
     "figma",
   ];
 
+export default function IconCloudDemo() {
+  const images = slugs.map(
+    (slug) => `https://cdn.simpleicons.org/${slug}/${slug}`,
+  );
+
   return (
-    <>
-      <Icon_Cloud iconSlugs={slugs}></Icon_Cloud>
-    </>
+    <div className="relative flex size-full items-center justify-center overflow-hidden">
+      <IconCloud images={images} />
+    </div>
   );
 }
-
-export default IconCloud;

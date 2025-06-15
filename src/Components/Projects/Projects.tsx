@@ -1,7 +1,9 @@
 import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
-import Style from "./Projects.module.css";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Style from "./Projects.module.css";
+import Navbar from "../Navbar"
+import Footer from "../Footer"
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -9,6 +11,11 @@ const Projects = () => {
   const targetRef = useRef<(HTMLElement | null)[]>([]);
 
   const [isMobile] = useState(window.innerWidth < 800);
+
+    window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
 
   let projectImage = [1, 2, 3, 4, 5, 6, 7, 8];
   let projectName = [
@@ -107,6 +114,9 @@ const Projects = () => {
   }, []);
 
   return (
+    <>
+    <Navbar />
+
     <section className={Style["projects-section"]}>
       <h1
         ref={(el) => {
@@ -121,7 +131,7 @@ const Projects = () => {
           if (el) targetRef.current[1] = el;
         }}
         className={Style["project-heading-para"]}
-      >
+        >
         out of hundreds
       </p>
 
@@ -138,7 +148,7 @@ const Projects = () => {
               href={projectLink[index - 1]}
               target="_blank"
               className={Style["img-container"]}
-            >
+              >
               <img
                 key={index + 3}
                 src={`project-img-${index++}.jpg`}
@@ -148,10 +158,16 @@ const Projects = () => {
                 {projectName[index - 2]}
               </div>
             </a>
+            <div className={Style["btn-wrap"]}>
+            <a  href={projectLink[index - 1]} target="_blank"  className={Style["view-button"]} onClick={() => { alert('Project coming soon!') }}>View Project</a>
+            </div>
           </div>
         ))}
       </div>
     </section>
+
+    <Footer />
+    </>
   );
 };
 

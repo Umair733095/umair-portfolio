@@ -16,14 +16,15 @@
 }
 
 .logo-svg {
-    margin-right: 44px;
+    margin-right: 64px;
+    margin-top: -76px;
     height: 300px;
     width: 300px;
     stroke: white;
     fill-opacity: 0;
     stroke-width: 3px;
     stroke-dasharray: 5000;
-    animation: draw 3s ease;
+    animation: draw 4s ease;
 }
 
 @keyframes draw {

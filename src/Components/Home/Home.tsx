@@ -1,6 +1,5 @@
 import IntroSection from "../Intro-section";
-import Client from "../Clients";
-import Projects from "../Projects";
+import Clients from "../Clients"
 import Navbar from "../Navbar";
 import Footer from "../Footer";
 
@@ -9,8 +8,7 @@ export default function Home() {
     <>
       <Navbar />
       <IntroSection></IntroSection>
-      <Client></Client>
-      <Projects></Projects>
+      <Clients></Clients>
       <Footer />
     </>
   );

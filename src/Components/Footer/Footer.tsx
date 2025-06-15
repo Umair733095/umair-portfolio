@@ -14,7 +14,7 @@ const Footer = () => {
         <div className={Style["footer-upper-wrap-container"]}>
           <div className={Style["footer-upper-wrap"]}>
             <div className={Style["footer-upper"]}>
-              <span className={Style["footer-name"]}>Hashir.</span>
+              <span className={Style["footer-name"]}> Made by <em style={{ marginLeft: '6px', marginRight: "6px" }}> Umair </em> &mdash; <strong style={{ marginLeft: '6px' }}> 2025</strong> </span>
               <a onClick={scrollUp} className={Style["footer-button"]}>
                 <svg
                   className={Style["arrow-sign"]}
@@ -40,7 +40,7 @@ const Footer = () => {
             <div className={Style["footer-contact-text"]}>
               <a
                 className={Style["footer-contact-link"]}
-                href="mailto:hashdev200@gmail.com"
+                href="mailto:umair733095@gmail.com"
               >
                 Write me an email{" "}
               </a>
@@ -50,7 +50,7 @@ const Footer = () => {
           <div className={Style["footer-icons"]}>
             <a
               className={Style["icon-container"]}
-              href="mailto:hashdev200@gmail.com"
+              href="mailto:umair733095@gmail.com"
             >
               <svg
                 className={Style["icon"]}
@@ -62,7 +62,7 @@ const Footer = () => {
             </a>
             <a
               className={Style["icon-container"]}
-              href="https://www.instagram.com/ig_hashirop?igsh=MTVvZWhvNzgyM3BjOQ=="
+              href="https://www.instagram.com/muhammad_umair_aslam1?igsh=cXFiNW1hdWs2d3dy"
               target="_blank"
             >
               <svg
@@ -75,7 +75,7 @@ const Footer = () => {
             </a>
             <a
               className={Style["icon-container"]}
-              href="https://x.com/HashDev200"
+              href="https://x.com/Muhamma12461918?t=-B0PLTF55LvgeBR-Lpb21Q&s=09"
               target="_blank"
             >
               <svg
@@ -88,7 +88,7 @@ const Footer = () => {
             </a>
             <a
               className={Style["icon-container"]}
-              href="https://www.facebook.com/hashir.aslam.16?mibextid=JRoKGi"
+              href="https://www.facebook.com/share/1BgXFmuKPw/"
               target="_blank"
             >
               <svg

@@ -40,6 +40,53 @@
     padding: 20%;
 }
 
+/********************** About me **********************/
+
+#about,
+#projects {
+  font-family: 'Courier New', monospace;
+  color: #f3ba2f;
+  font-size: 20px;
+  font-weight: 900;
+  padding: 12px 20px;
+  border-radius: 12px;
+  transition: transform 0.2s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+  user-select: none;
+  letter-spacing: 1.5px;
+  background-color: transparent;
+  text-align: center;
+}
+
+#about:hover,
+#projects:hover {
+  background-color: #332400; /* dark golden background */
+  box-shadow: 0 0 12px #f3ba2faa, 0 0 25px #f3ba2fee;
+  transform: scale(1.03);
+}
+
+
+  /********************** skills **********************/
+
+  #skills {
+  font-family: 'Courier New', monospace;
+  font-size: 20px;
+  font-weight: 800;
+  color: #c6f7fe; /* icy light cyan */
+  padding: 12px 20px;
+  border-radius: 12px;
+  text-align: center;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  user-select: none;
+}
+
+#skills:hover {
+  background: #0a1e35;
+  box-shadow: 0 0 12px #3f97f7aa;
+  background: #1c3a6f;
+  box-shadow: 0 0 25px #3f97f7ee;
+}
+
 @media only screen and (min-width: 371px) and (max-width: 600px) {
     .dock {
         margin: 0 !important;
@@ -62,5 +109,23 @@
     }
     .dock {
         margin: 0 !important;
+    }
+}
+
+.desktop-only {
+  display: flex;
+}
+
+/* Hide on screens smaller than 768px */
+@media (max-width: 668px) {
+  .desktop-only {
+    display: none !important;
+  }
+}
+
+@media (max-width: 400px) {
+    #about, #skills, #projects { 
+        padding-left: 12px;
+        padding-right: 12px;
     }
 }
