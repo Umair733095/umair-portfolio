@@ -14,7 +14,7 @@ const Footer = () => {
         <div className={Style["footer-upper-wrap-container"]}>
           <div className={Style["footer-upper-wrap"]}>
             <div className={Style["footer-upper"]}>
-              <span className={Style["footer-name"]}> Made by <em style={{ marginLeft: '6px', marginRight: "6px" }}> Umair </em> &mdash; <strong style={{ marginLeft: '6px' }}> 2025</strong> </span>
+              <span className={Style["footer-name"]}> By <em style={{ marginLeft: '6px', marginRight: "6px" }}> Umair </em> &mdash; <strong style={{ marginLeft: '6px' }}> 2025</strong> </span>
               <a onClick={scrollUp} className={Style["footer-button"]}>
                 <svg
                   className={Style["arrow-sign"]}
