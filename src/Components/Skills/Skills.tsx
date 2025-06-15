@@ -1,5 +1,5 @@
 import { useRef, useEffect } from "react";
-import Style from "./skills.module.css";
+import Style from "./Skills.module.css";
 import gsap from "gsap";
 import Navbar from "../Navbar"
 import Footer from "../Footer"
